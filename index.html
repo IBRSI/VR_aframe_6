@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Мой A-Frame проект</title>
+    <title>A-Frame</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-event-set-component/master/dist/aframe-event-set-component.min.js"></script>
   </head>
@@ -10,8 +10,7 @@
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D2" 
              animation="property: rotation; to: 0 405 0; loop: true; dur: 2000"></a-box>
       <a-sphere position="1 1 -3" radius="1.25" color="#EF2D5E" 
-                event-set__enter="_event: mouseenter; color: #FFC65D" 
-                event-set__leave="_event: mouseleave; color: #EF2D5E"></a-sphere>
+                event-set__click="_event: click; color: #FFC65D"></a-sphere>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
